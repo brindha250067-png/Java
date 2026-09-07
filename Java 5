@@ -1,0 +1,22 @@
+class Animal {
+    String name = "Tommy";
+
+    void display() {
+        System.out.println("Animal Name: " + name);
+    }
+}
+
+class Dog extends Animal {
+    void show() {
+        System.out.println("This is a Dog");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+
+        d.display();  // inherited method
+        d.show();
+    }
+}
